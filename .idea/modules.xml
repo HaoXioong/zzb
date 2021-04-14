@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/zzb.iml" filepath="$PROJECT_DIR$/zzb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzb-common/zzb-common.iml" filepath="$PROJECT_DIR$/zzb-common/zzb-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzb-gateway/zzb-gateway.iml" filepath="$PROJECT_DIR$/zzb-gateway/zzb-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzb-item/zzb-item.iml" filepath="$PROJECT_DIR$/zzb-item/zzb-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzb-item/zzb-item-interface/zzb-item-interface.iml" filepath="$PROJECT_DIR$/zzb-item/zzb-item-interface/zzb-item-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzb-item/zzb-item-service/zzb-item-service.iml" filepath="$PROJECT_DIR$/zzb-item/zzb-item-service/zzb-item-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzb-registry/zzb-registry.iml" filepath="$PROJECT_DIR$/zzb-registry/zzb-registry.iml" />
+    </modules>
+  </component>
+</project>
