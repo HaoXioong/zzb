@@ -25,19 +25,19 @@ public class CategoryController {
      * @return
      */
     @GetMapping("list")
-    public ResponseEntity<List<Category>> queryCategoriesByPid(@RequestParam(value="pid", defaultValue = "0")Long pid){
+    public Result<List<Category>> queryCategoriesByPid(@RequestParam(value="pid", defaultValue = "0")Long pid){
 //        try {
             if(pid == null || pid < 0){
 //                return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
 //                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-                return ResponseEntity.badRequest().build();
+                return Result.validateFailed("参数错误");
             }
             List<Category> categories = this.categoryService.queryCategoriesByPid(pid);
-            if(CollectionUtils.isEmpty(categories)){
-//                return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-                return ResponseEntity.notFound().build();
-            }
-            return ResponseEntity.ok(categories);
+//            if(CollectionUtils.isEmpty(categories)){
+////                return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+//                return ;
+//            }
+            return Result.success(categories, "success");
 //        } catch (Exception e) {
 //            e.printStackTrace();
 //        }
