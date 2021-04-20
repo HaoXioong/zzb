@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/zzb-item/zzb-item-interface/zzb-item-interface.iml" filepath="$PROJECT_DIR$/zzb-item/zzb-item-interface/zzb-item-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/zzb-item/zzb-item-service/zzb-item-service.iml" filepath="$PROJECT_DIR$/zzb-item/zzb-item-service/zzb-item-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/zzb-registry/zzb-registry.iml" filepath="$PROJECT_DIR$/zzb-registry/zzb-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzb-upload/zzb-upload.iml" filepath="$PROJECT_DIR$/zzb-upload/zzb-upload.iml" />
     </modules>
   </component>
 </project>

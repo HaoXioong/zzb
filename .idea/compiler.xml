@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zzb-common" />
-        <module name="zzb-registry" />
         <module name="zzb-gateway" />
-        <module name="zzb-item-interface" />
+        <module name="zzb-common" />
+        <module name="zzb-upload" />
+        <module name="zzb-registry" />
         <module name="zzb-item-service" />
+        <module name="zzb-item-interface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="zzb-item-interface" target="1.8" />
       <module name="zzb-item-service" target="1.8" />
       <module name="zzb-registry" target="1.8" />
+      <module name="zzb-upload" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -31,6 +33,7 @@
       <module name="zzb-item-interface" options="-parameters" />
       <module name="zzb-item-service" options="-parameters" />
       <module name="zzb-registry" options="-parameters" />
+      <module name="zzb-upload" options="-parameters" />
     </option>
   </component>
 </project>
