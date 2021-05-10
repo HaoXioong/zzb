@@ -5,6 +5,7 @@ import com.zzb.item.pojo.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -52,5 +53,14 @@ public class CategoryService {
         Category category = new Category();
         category.setId(id);
         return this.categoryMapper.delete(category);
+    }
+
+    public List<String> queryNamesByIds(List<Long> ids){
+        List<Category> list = this.categoryMapper.selectByIdList(ids);
+        List<String> names = new ArrayList<>();
+        for(Category category : list){
+            names.add(category.getName());
+        }
+        return names;
     }
 }
