@@ -63,4 +63,8 @@ public class BrandService {
         this.brandMapper.deleteByPrimaryKey(brand);
         this.brandMapper.delBrandAndCatagory(id);
     }
+
+    public List<Brand> selectBrandByCid(Long cid){
+        return this.brandMapper.selectBrandByCid(cid);
+    }
 }

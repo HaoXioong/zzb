@@ -3,6 +3,7 @@ package com.zzb.item.controller;
 import com.zzb.common.api.Page;
 import com.zzb.common.api.Result;
 import com.zzb.item.pojo.Brand;
+import com.zzb.item.pojo.SpecGroup;
 import com.zzb.item.service.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -38,6 +39,12 @@ public class BrandController {
     public Result delBrand(@RequestParam("id") Long id){
         this.brandService.delBrand(id);
         return Result.success(null);
+    }
+
+    @GetMapping("cid/{cid}")
+    public Result<List<Brand>> queryGroupsByCid(@PathVariable("cid") Long cid){
+        List<Brand> list = this.brandService.selectBrandByCid(cid);
+        return Result.success(list);
     }
 
 }

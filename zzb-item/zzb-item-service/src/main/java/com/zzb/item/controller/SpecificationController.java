@@ -23,8 +23,13 @@ public class SpecificationController {
     }
 
     @GetMapping("params")
-    public Result<List<SpecParam>> queryParamsByGid(@RequestParam("gid") Long gid){
-        List<SpecParam> list = this.specificationService.queryParamsBygid(gid);
+    public Result<List<SpecParam>> queryParams(
+            @RequestParam(value = "gid", required = false)Long gid,
+            @RequestParam(value = "cid", required = false)Long cid,
+            @RequestParam(value = "generic", required = false)Boolean generic,
+            @RequestParam(value = "searching", required = false)Boolean searching
+    ){
+        List<SpecParam> list = this.specificationService.queryParamsBygid(gid, cid, generic, searching);
         return Result.success(list);
     }
 }
